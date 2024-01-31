@@ -1,0 +1,153 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /*background-color: rgb(62, 38, 38);*/
+}
+
+.lista-titulo{
+    list-style: none ;
+}
+
+a{
+    text-decoration: none;
+}
+
+.texto-cuerpo{
+    padding: 2cap;
+}
+
+
+
+div {
+    background-color: rgb(62, 38, 38);
+    color: whitesmoke;
+}
+.imagen-video{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+
+}
+footer{
+    background-color: black;
+    padding-left: 1cap;
+}
+.chocolates-uno{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 200px;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    
+}
+.contenedor-chocolate{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    justify-items: center;
+}
+.imagen-chocolate{
+    height: 20rem;
+    border-radius: 50px;
+
+}
+.tipo-uno{
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.tipo-dos{
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.chocolates-dos{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    
+}
+.bomba-uno{
+    margin-left: 120px;
+    margin-top: 50px;
+    align-items: center;
+}
+.bomba-dos{
+    margin-left: 80px;
+}
+.chocolates-tres{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px;
+    justify-items: center;
+    
+    
+}
+.especialidades-uno{
+    margin-left: 100px;
+    align-items: center;
+    justify-items: center;
+}
+.contenedor-imagenens{
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 500px;
+    justify-items: center;
+    align-items: center;
+    padding: 40px;
+}
+.tamañoimagen{
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.contenedor-contacto{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 300px ;
+    grid-template-areas: 
+    "mapa texto-contacto"
+    "mapa formulario";
+    padding: 20px;
+    justify-items: center;
+    
+}
+.mapa{
+    grid-area: mapa;
+    align-items: center;
+}
+.texto-contacto{
+    grid-area: texto-contacto;
+    align-items: start;
+}
+.formulario{
+    grid-area: formulario;
+    align-content: center;
+}
+
+
+/* mq de celular*/
+
+@media screen and (max-width:600px) {
+    .contenedor-imagenens .imagen-tres, .imagen-seis{
+        display: none;
+    }
+    .contenedor-imagenens{
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(4, 25%);
+    }
+
+}
+
